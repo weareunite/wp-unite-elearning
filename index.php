@@ -16,4 +16,11 @@ define('UN_ELING_PATH', plugin_dir_path(__FILE__));
 define('UN_ELING_DIR', $plugin_dir);
 define('UN_ELING_INDEX', __FILE__);
 
+// Core
 require_once 'lib' . DIRECTORY_SEPARATOR . 'UN_EL_Core.php';
+
+// Other libraries
+require_once 'lib' . DIRECTORY_SEPARATOR . 'UN_EL_ACFD.php';
+
+// Plugin initialization
+UN_EL_Core::init();
