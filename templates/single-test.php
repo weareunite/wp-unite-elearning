@@ -24,7 +24,7 @@ get_header();
 					<?php foreach ( $question['answers'] as $aid => $answer ): ?>
                         <div class="un-el_answer_wrapper">
 							<?php $answerId = 'q' . $qid . 'a' . $aid; ?>
-                            <input class="un-el_answer" type="checkbox" id="<?php echo $answerId; ?>">
+                            <input class="un-el_answer" type="checkbox" id="<?php echo $answerId; ?>" name="<?php echo $answerId; ?>">
                             <label class="un-el_answer_label" for="<?php echo $answerId; ?>"><?php echo $answer['title']; ?></label>
                         </div>
 					<?php endforeach; ?>
