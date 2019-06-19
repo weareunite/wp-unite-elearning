@@ -142,9 +142,13 @@ gulp.task('build', gulp.series('copy', 'minify-css', 'minify-js', function (cb) 
 
 gulp.task('watch', gulp.series('build', function () {
 
-    gulp.watch(paths.css, gulp.series('minify-css'));
-    gulp.watch(paths.js, gulp.series('minify-js'));
-    gulp.watch(paths.sass, gulp.series('sass', 'minify-css'));
+    gulp.watch(paths.js, gulp.series('minify-js')).on('change', function (path, stats) {
+        return path;
+    });
+
+    gulp.watch(paths.sass, gulp.series('sass', 'minify-css')).on('change', function (path, stats) {
+        return path;
+    });
 
     gutil.log(gutil.colors.green('Watching files ...'));
 

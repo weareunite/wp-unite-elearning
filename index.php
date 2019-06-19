@@ -21,6 +21,7 @@ require_once 'lib' . DIRECTORY_SEPARATOR . 'UN_EL_Core.php';
 
 // Other libraries
 require_once 'lib' . DIRECTORY_SEPARATOR . 'UN_EL_ACFD.php';
+require_once 'lib' . DIRECTORY_SEPARATOR . 'UN_EL_Test.php';
 
 // Plugin initialization
 UN_EL_Core::init();

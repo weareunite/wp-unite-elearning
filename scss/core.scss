@@ -1,0 +1,24 @@
+.un-el_answer_wrapper {
+  display: block;
+}
+
+.un-el_answer_label {
+  display: inline-block;
+}
+
+.un-el_btn {
+  background: #0074a9;
+  color: white;
+  padding: 10px 17px;
+  margin: 10px 0;
+  cursor: pointer;
+
+  &.un-el_btn--rounded {
+    border-radius: 5px;
+  }
+
+  &:hover {
+    color: white;
+    font-weight: bold;
+  }
+}

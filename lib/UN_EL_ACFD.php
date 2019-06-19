@@ -10,6 +10,10 @@ class UN_EL_ACFD {
 	const TEST_QUESTIONS_REPEATER_NAME = 'test_questions';
 	const TEST_QUESTION_TITLE          = 'test_question_title';
 	const TEST_QUESTION_DESC           = 'test_question_description';
+	const TEST_QUESTION_ANSWERS        = 'test_question_answers';
+	const TEST_QUESTION_ANSWER_TITLE   = 'test_question_answer_title';
+	const TEST_QUESTION_ANSWER_RIGHT   = 'test_question_answer_right';
+	const TEST_WRAPPER_CLASSES         = 'test_wrapper_classes';
 
 	/**
 	 * Class initialization
@@ -41,10 +45,16 @@ class UN_EL_ACFD {
 
 		$wrapper = new CustomGroup( __( 'Test Settings', 'wp-unite-elearning' ), 'post_type == ' . UN_EL_Core::TEST_CPT_NAME );
 
+		$wrapper->addField( self::TEST_WRAPPER_CLASSES, __( 'Wrapper classes (space separated)', 'wp-unite-elearning' ), 'text' );
 		$repeater = $wrapper->addContainer( self::TEST_QUESTIONS_REPEATER_NAME, __( 'Test questions', 'wp-unite-elearning' ), 'repeater' );
 
 		$repeater->addField( self::TEST_QUESTION_TITLE, __( 'Question title', 'wp-unite-elearning' ), 'text' );
 		$repeater->addField( self::TEST_QUESTION_DESC, __( 'Question description', 'wp-unite-elearning' ), 'text' );
+
+		$answers = $repeater->addContainer( self::TEST_QUESTION_ANSWERS, __( 'Answers', 'wp-unite-elearning' ), 'repeater' );
+
+		$answers->addField( self::TEST_QUESTION_ANSWER_TITLE, __( 'Answer title', 'wp-unite-elearning' ), 'wysiwyg' );
+		$answers->addField( self::TEST_QUESTION_ANSWER_RIGHT, __( 'Is right', 'wp-unite-elearning' ), 'true_false' );
 	}
 
 }
