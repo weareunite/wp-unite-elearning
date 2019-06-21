@@ -7,6 +7,7 @@
  */
 class UN_EL_ACFD {
 
+	// Test CPT custom fields keys
 	const TEST_QUESTIONS_REPEATER_NAME = 'test_questions';
 	const TEST_QUESTION_TITLE          = 'test_question_title';
 	const TEST_QUESTION_DESC           = 'test_question_description';
@@ -14,6 +15,19 @@ class UN_EL_ACFD {
 	const TEST_QUESTION_ANSWER_TITLE   = 'test_question_answer_title';
 	const TEST_QUESTION_ANSWER_RIGHT   = 'test_question_answer_right';
 	const TEST_WRAPPER_CLASSES         = 'test_wrapper_classes';
+
+	// Class CPT custom fields key
+	const CLASS_SCHOOL_ID      = 'class_school_id';
+	const CLASS_TEACHER_PERSON = 'class_teacher_person';
+	const CLASS_TEACHER_PHONE  = 'class_teacher_phone';
+	const CLASS_TEACHER_EMAIL  = 'class_teacher_email';
+	const CLASS_PUPILS_NO      = 'class_pupils_no';
+
+	// School CPT custom fields key
+	const SCHOOL_ADDRESS        = 'school_address';
+	const SCHOOL_CONTACT_PERSON = 'school_person';
+	const SCHOOL_CONTACT_PHONE  = 'school_phone';
+	const SCHOOL_CONTACT_EMAIL  = 'school_email';
 
 	/**
 	 * Class initialization
@@ -36,6 +50,8 @@ class UN_EL_ACFD {
 	 */
 	public static function runAcfdScript() {
 		self::createTestCustomFields();
+		self::createClassCustomFields();
+		self::createSchoolCustomFields();
 	}
 
 	/**
@@ -55,6 +71,41 @@ class UN_EL_ACFD {
 
 		$answers->addField( self::TEST_QUESTION_ANSWER_TITLE, __( 'Answer title', 'wp-unite-elearning' ), 'wysiwyg' );
 		$answers->addField( self::TEST_QUESTION_ANSWER_RIGHT, __( 'Is right', 'wp-unite-elearning' ), 'true_false' );
+	}
+
+	/**
+	 * Create custom fields for class CPT
+	 */
+	public static function createClassCustomFields() {
+
+		$wrapper = new CustomGroup( __( 'Class Settings', 'wp-unite-elearning' ), 'post_type == ' . UN_EL_Core::CLASS_CPT_NAME );
+
+		$wrapper->addField( self::CLASS_SCHOOL_ID, __( 'School', 'wp-unite-elearning' ), 'post_object' )
+		        ->set( 'post_type', [ UN_EL_Core::SCHOOL_CPT_NAME ] )
+		        ->set( 'taxonomy', [] )
+		        ->set( 'allow_null', 1 )
+		        ->set( 'multiple', 0 )
+		        ->set( 'return_format', 'id' )
+		        ->setRequired( true );
+
+		$wrapper->addField( self::CLASS_TEACHER_PERSON, __( 'Class contact person', 'wp-unite-elearning' ), 'text' );
+		$wrapper->addField( self::CLASS_TEACHER_PHONE, __( 'Class contact phone', 'wp-unite-elearning' ), 'text' );
+		$wrapper->addField( self::CLASS_TEACHER_EMAIL, __( 'Class contact email', 'wp-unite-elearning' ), 'email' );
+		$wrapper->addField( self::CLASS_PUPILS_NO, __( 'Number of pupils', 'wp-unite-elearning' ), 'number' )->setRequired( true );
+
+	}
+
+	/**
+	 * Create custom fields for school CPT
+	 */
+	public static function createSchoolCustomFields() {
+
+		$wrapper = new CustomGroup( __( 'School Settings', 'wp-unite-elearning' ), 'post_type == ' . UN_EL_Core::SCHOOL_CPT_NAME );
+
+		$wrapper->addField( self::SCHOOL_ADDRESS, __( 'Address', 'wp-unite-elearning' ), 'text' );
+		$wrapper->addField( self::SCHOOL_CONTACT_PERSON, __( 'Contact person', 'wp-unite-elearning' ), 'text' );
+		$wrapper->addField( self::SCHOOL_CONTACT_PHONE, __( 'Contact phone', 'wp-unite-elearning' ), 'text' );
+		$wrapper->addField( self::SCHOOL_CONTACT_EMAIL, __( 'Contact email', 'wp-unite-elearning' ), 'email' )->setRequired( true );
 	}
 
 }

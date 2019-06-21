@@ -21,6 +21,11 @@ require_once 'lib' . DIRECTORY_SEPARATOR . 'UN_EL_Core.php';
 
 // Other libraries
 require_once 'lib' . DIRECTORY_SEPARATOR . 'UN_EL_ACFD.php';
+require_once 'lib' . DIRECTORY_SEPARATOR . 'UN_EL_Class.php';
+require_once 'lib' . DIRECTORY_SEPARATOR . 'UN_EL_QR.php';
+require_once 'lib' . DIRECTORY_SEPARATOR . 'UN_EL_PDF.php';
+require_once 'lib' . DIRECTORY_SEPARATOR . 'UN_EL_REST.php';
+require_once 'lib' . DIRECTORY_SEPARATOR . 'UN_EL_Shortcode.php';
 require_once 'lib' . DIRECTORY_SEPARATOR . 'UN_EL_Test.php';
 
 // Plugin initialization

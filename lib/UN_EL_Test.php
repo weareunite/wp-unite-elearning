@@ -7,6 +7,14 @@
  */
 class UN_EL_Test {
 
+	public static function getTests() {
+		return get_posts( [
+			'orderby'   => 'title',
+			'order'     => 'ASC',
+			'post_type' => UN_EL_Core::TEST_CPT_NAME,
+		] );
+	}
+
 	/**
 	 * Get test questions and data
 	 *
@@ -56,5 +64,13 @@ class UN_EL_Test {
 
 		return $testQuestionsArray;
 
+	}
+
+	public static function generateExecutionUrl( $classId = 0, $testId = 0, $userId = 0 ) {
+
+		$permalink    = get_post_permalink( $testId );
+		$executionUrl = $permalink . $classId . '-' . $userId;
+
+		return $executionUrl;
 	}
 }

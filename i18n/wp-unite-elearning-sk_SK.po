@@ -1,0 +1,413 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: UNITE E-Learning\n"
+"POT-Creation-Date: 2019-06-20 15:08+0200\n"
+"PO-Revision-Date: 2019-06-20 15:10+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-KeywordsList: __;_x;_e;esc_attr_e;_n:1,2;_n_noop:1,2;_nx:1,2;"
+"_nx_noop:1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: bower_components\n"
+"X-Poedit-SearchPathExcluded-2: acf-settings\n"
+"X-Poedit-SearchPathExcluded-3: vendor\n"
+"X-Poedit-SearchPathExcluded-4: i18n\n"
+"X-Poedit-SearchPathExcluded-5: css\n"
+"X-Poedit-SearchPathExcluded-6: js\n"
+"X-Poedit-SearchPathExcluded-7: vendor\n"
+"X-Poedit-SearchPathExcluded-8: dist\n"
+
+#: lib/UN_EL_ACFD.php:62
+msgid "Test Settings"
+msgstr "Nastavenia testu"
+
+#: lib/UN_EL_ACFD.php:64
+msgid "Wrapper classes (space separated)"
+msgstr "Triedy wrapperu (oddelené medzerou)"
+
+#: lib/UN_EL_ACFD.php:65
+msgid "Test questions"
+msgstr "Otázky k testu"
+
+#: lib/UN_EL_ACFD.php:67
+msgid "Question title"
+msgstr "Nadpis otázky"
+
+#: lib/UN_EL_ACFD.php:68
+msgid "Question description"
+msgstr "Popis otázky"
+
+#: lib/UN_EL_ACFD.php:70
+msgid "Answers"
+msgstr "Odpovede"
+
+#: lib/UN_EL_ACFD.php:72
+msgid "Answer title"
+msgstr "Nadpis odpovede"
+
+#: lib/UN_EL_ACFD.php:73
+msgid "Is right"
+msgstr "Je správna"
+
+#: lib/UN_EL_ACFD.php:81
+msgid "Class Settings"
+msgstr "Nastavenia triedy"
+
+#: lib/UN_EL_ACFD.php:83
+msgid "School"
+msgstr "Škola"
+
+#: lib/UN_EL_ACFD.php:91
+msgid "Class contact person"
+msgstr "Kontaktná osoba triedy"
+
+#: lib/UN_EL_ACFD.php:92
+msgid "Class contact phone"
+msgstr "Telefónne číslo kontaktnej osoby"
+
+#: lib/UN_EL_ACFD.php:93
+msgid "Class contact email"
+msgstr "Email kontaktnej osoby"
+
+#: lib/UN_EL_ACFD.php:94
+msgid "Number of pupils"
+msgstr "Počet žiakov"
+
+#: lib/UN_EL_ACFD.php:103
+msgid "School Settings"
+msgstr "Nastavenia školy"
+
+#: lib/UN_EL_ACFD.php:105
+msgid "Address"
+msgstr "Adresa"
+
+#: lib/UN_EL_ACFD.php:106
+msgid "Contact person"
+msgstr "Kontaktná osoba"
+
+#: lib/UN_EL_ACFD.php:107
+msgid "Contact phone"
+msgstr "Telefónne číslo kontaktnej osoby"
+
+#: lib/UN_EL_ACFD.php:108
+msgid "Contact email"
+msgstr "Email kontaktnej osoby"
+
+#: lib/UN_EL_Class.php:19 lib/UN_EL_Class.php:38
+msgid "Generate QR"
+msgstr "Generovať QR kód"
+
+#: lib/UN_EL_Class.php:33
+msgid "Choose test"
+msgstr "Vyberte test"
+
+#: lib/UN_EL_Core.php:82
+msgid "Tests"
+msgstr "Testy"
+
+#: lib/UN_EL_Core.php:98
+msgid "Classes"
+msgstr "Triedy"
+
+#: lib/UN_EL_Core.php:114
+msgid "Schools"
+msgstr "Školy"
+
+#: lib/UN_EL_REST.php:53
+msgid "Test ID was not provided"
+msgstr "Nie je definované ID testu"
+
+#: lib/UN_EL_REST.php:59
+msgid "Class ID was not provided"
+msgstr "Nie je definované ID triedy"
+
+#: lib/UN_EL_REST.php:64
+msgid "QR Codes was generated successfully"
+msgstr "QR kód bol úspešne vygenerovaný"
+
+#: templates/single-test.php:33
+msgid "Submit test"
+msgstr "Odoslať test"
+
+#~ msgid "Parser settings"
+#~ msgstr "Nastavenie parseru"
+
+#~ msgid "Tags to parse"
+#~ msgstr "Tagy na parsovanie"
+
+#~ msgid "Tag"
+#~ msgstr "Tag"
+
+#~ msgid "Photo detail page"
+#~ msgstr "Stránka detailu fotografie"
+
+#~ msgid "User profile page"
+#~ msgstr "Stránka detailu profilu"
+
+#~ msgid "Every 30 mins"
+#~ msgstr "Každých 30 minút"
+
+#~ msgid "Every 15 mins"
+#~ msgstr "Každých 15 minút"
+
+#~ msgid "User data loaded, page will be reloaded after 3 seconds"
+#~ msgstr "Používateľské dáta boli načítané, stránka sa obnoví o 3 sekundy"
+
+#~ msgid "Unable to fetch data at this moment"
+#~ msgstr "Momentálne nie je možné načítať používateľské dáta"
+
+#~ msgid "More photos"
+#~ msgstr "Viac fotiek"
+
+#~ msgid "We're currently trying to fetch username. "
+#~ msgstr "Aktuálne zisťujeme používateľské dáta. "
+
+#~ msgid "Try to fetch username"
+#~ msgstr "Zistiť používateľské dáta"
+
+#~ msgid "Mentioned in this photo"
+#~ msgstr "Označené osoby v tejto fotke"
+
+#~ msgid "This photo doesn'nt have any description"
+#~ msgstr "Táto fotka nemá popis"
+
+#~ msgid "This photo doesn'nt have any tags"
+#~ msgstr "Táto fotka nemá žiadne tagy"
+
+#~ msgid "We're trying to fetch username"
+#~ msgstr "Aktuálne zisťujeme používateľské dáta"
+
+#~ msgid "IG Profile"
+#~ msgstr "IG Profil"
+
+#~ msgid "Full name"
+#~ msgstr "Celé meno"
+
+#~ msgid "Bio"
+#~ msgstr "Popis"
+
+#~ msgid "Link"
+#~ msgstr "Odkaz"
+
+#~ msgid "Followers count"
+#~ msgstr "Počet sledovateľov"
+
+#~ msgid "Following count"
+#~ msgstr "Počet sledujúcich"
+
+#~ msgid "Total photos"
+#~ msgstr "Celkovo fotiek"
+
+#~ msgid "Most used tags\t"
+#~ msgstr "Najpoužívanejšie tagy\t"
+
+#~ msgid "All images from %s"
+#~ msgstr "Všetky fotky od používateľa %s"
+
+#~ msgid "All images from this user"
+#~ msgstr "Všetky fotky od tohto používateľa"
+
+#~ msgid "Show Profile"
+#~ msgstr "Zobraziť profil"
+
+#~ msgid "GDPR Addon Settings"
+#~ msgstr "Nastavenia GDPR Addonu"
+
+#~ msgid "Download data form"
+#~ msgstr "Formulár “Vyžiadanie osobných údajov”"
+
+#~ msgid "Delete user form"
+#~ msgstr "Formulár “Zmazanie užívateľa”"
+
+#~ msgid "Please agree with our terms."
+#~ msgstr "Je potrebné súhlasiť s podmienkami používania webu."
+
+#~ msgid "I agree to the <a href=\"%s\">terms of use</a> of the site"
+#~ msgstr "Súhlasím s <a href=\"%s\">podmienkami používania</a> stránky"
+
+#~ msgid "Privacy Policy"
+#~ msgstr "Ochrana osobných údajov"
+
+#~ msgid "I agree with <a href=\"%s\">terms</a> for this website"
+#~ msgstr ""
+#~ "Súhlasím so spracovaním mojich osobných údajov v rozsahu a na účely, "
+#~ "ktoré sú uvedené v sekcií <a href=\"%s\">osobné údaje</a>"
+
+#~ msgid ""
+#~ "If you revoke approval with our terms, we will not be able to serve you "
+#~ "functions that are needed to use website as logged user. For this "
+#~ "reasons, you will be logged out from our website. But dont worry, you can "
+#~ "approve this terms anytime in future."
+#~ msgstr ""
+#~ "Ak zrušíte potvrdenie o súhlase so spracovaním vašich osobných údajov, "
+#~ "nebude možné doručiť vám funkcie, ktoré sú potrebné pre používanie "
+#~ "webstránky ako prihláseného používateľa. Ale nemajte strach, kedykoľvek "
+#~ "nám toto povolenie môžete udeliť znovu."
+
+#~ msgid "Download data"
+#~ msgstr "Vyžiadať výpis osobných údajov"
+
+#~ msgid "Delete user"
+#~ msgstr "Zmazať používateľa"
+
+#~ msgid "Privacy policy is changing"
+#~ msgstr "Politika osobných údajov sa mení"
+
+#~ msgid ""
+#~ "Our privacy policy is changing, please confirm that you are approving our "
+#~ "terms of usage"
+#~ msgstr ""
+#~ "Politika osobných údajov sa medzi časom zmenila. Dajte nám prosím súhlas "
+#~ "so spracovaním vašich osobných údajov."
+
+#~ msgid "I agree with <a href=\"%s\">privacy policy</a> of this site"
+#~ msgstr ""
+#~ "Súhlasím so spracovaním mojich osobných údajov v rozsahu a na účely, "
+#~ "ktoré sú uvedené v sekcii <a href=\"%s\">Osobné údaje</a>"
+
+#~ msgid "Save"
+#~ msgstr "Uložiť"
+
+#~ msgid "Not agree ?"
+#~ msgstr "Nesúhlasíte ?"
+
+#~ msgid "It's ok. Here are some actions that you can make"
+#~ msgstr ""
+#~ "To je v poriadku. Ak nám však neudelíte potvrdenie o súhlase s "
+#~ "podmienkami používania webu, nebude možné doručiť vám funkcie, ktoré sú "
+#~ "potrebné pre používanie webstránky ako prihláseného používateľa. Teraz sa "
+#~ "môžete odhlásiť - vaše údaje sa ešte nevymažú a pri ďaľšom prihlásení nám "
+#~ "môžete udeliť súhlas s ich používaním naďalej. Taktiež môžete požiadať o "
+#~ "informáciu, aké údaje o vás máme alebo rovno požiadať o ich vymazanie"
+
+#~ msgid "Logout"
+#~ msgstr "Odhlásiť"
+
+#~ msgid "Request data"
+#~ msgstr "Vyžiadať výpis osobných údajov"
+
+#~ msgid "Request profile delete"
+#~ msgstr "Vyžiadať zmazanie profilu"
+
+#~ msgid "Please mark privacy policy approve as checked"
+#~ msgstr "Označte prosím súhlas s podmienkami webu"
+
+#~ msgid "Thank you! This popup will dissapear after few seconds."
+#~ msgstr "Ďakujeme! Tento popup zmizne o pár sekúnd."
+
+#~ msgid "%s commented on %s"
+#~ msgstr "%s komentoval %s"
+
+#~ msgid "Comment"
+#~ msgstr "Komentár"
+
+#~ msgid "Today"
+#~ msgstr "Dnes"
+
+#~ msgid "Yesterday"
+#~ msgstr "Včera"
+
+#~ msgid "%s added post"
+#~ msgstr "%s pridal článok"
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "%s - new comment"
+#~ msgstr "%s - nový komentár"
+
+#~ msgid "%s added new post"
+#~ msgstr "%s pridal článok"
+
+#~ msgid "Photos"
+#~ msgstr "Fotografie"
+
+#~ msgid "Photo"
+#~ msgstr "Fotografia"
+
+#~ msgid "Add New Photo"
+#~ msgstr "Pridať fotografiu"
+
+#~ msgid "Use as featured image"
+#~ msgstr "Nastaviť ako prezentačný obrázok"
+
+#~ msgid "%s Photo"
+#~ msgid_plural "%s Photos"
+#~ msgstr[0] "%s Fotografia"
+#~ msgstr[1] "%s Fotografie"
+#~ msgstr[2] "%s Fotografií"
+
+#~ msgid "%s View"
+#~ msgid_plural "%s Views"
+#~ msgstr[0] "%s Zobrazenie"
+#~ msgstr[1] "%s Zobrazenia"
+#~ msgstr[2] "%s Zobrazení"
+
+#~ msgid "Do you have interesting photo? Share it!."
+#~ msgstr "Máte zaujímavú fotografiu? Podeľte sa s ostatnými vo fotománii."
+
+#~ msgid "Register"
+#~ msgstr "Registrácia"
+
+#~ msgid "This feature is for logged in users only"
+#~ msgstr "Táto funkcia je prístupná iba prihláseným používateľom"
+
+#~ msgid "%s from device %s"
+#~ msgstr "%s zo zariadenia %s"
+
+#~ msgid "Missing image category."
+#~ msgstr "Chýba kategória fotografie."
+
+#~ msgid "Incorrect image category. Please select one from the list."
+#~ msgstr ""
+#~ "Nesprávna kategória fotografie. Vyber niektorú z ponúknutých možností."
+
+#~ msgid "Missing device."
+#~ msgstr "Chýba zariadenie."
+
+#~ msgid "Incorrect device. Please select one from the list."
+#~ msgstr "Nesprávne zariadenie. Vyber niektorú z ponúknutých možností."
+
+#~ msgid "Like feature is available for logged users only"
+#~ msgstr "Táto funkcia je dostupná iba prihláseným používateľom"
+
+#~ msgid "Photo was succesfully liked"
+#~ msgstr "Fotografia bola úspešne like-nutá"
+
+#~ msgid ""
+#~ "Only logged in user are allowed to upload photos. Please login to "
+#~ "continue to your upload."
+#~ msgstr ""
+#~ "Fotografie môžu pridávať len prihlásení používatelia. Ak chcete "
+#~ "pokračovať v nahrávaní, prihláste sa."
+
+#~ msgid "Your photo has been successfully uploaded."
+#~ msgstr "Fotografia bola úspešne nahraná."
+
+#~ msgid "Check it out here:"
+#~ msgstr "Zobraziť fotografiu:"
+
+#~ msgid "Category"
+#~ msgstr "Kategória"
+
+#~ msgid "select photo category"
+#~ msgstr "vyber kategóriu fotografie"
+
+#~ msgid "Device"
+#~ msgstr "Zariadenie"
+
+#~ msgid "select your device"
+#~ msgstr "vyber svoje zariadenie"
+
+#~ msgid "Keywords"
+#~ msgstr "Klúčové slová"
